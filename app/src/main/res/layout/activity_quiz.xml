@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <Button
+        android:id="@+id/bt_G"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_G_onClick"
+        android:text="G"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_F"
+        app:layout_constraintStart_toEndOf="@+id/bt_F" />
+
+    <Button
+        android:id="@+id/bt_Fsharp"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="45dp"
+        android:onClick="bt_Gb_onClick"
+        android:text="F#"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_Dsharp"
+        app:layout_constraintStart_toEndOf="@+id/bt_Dsharp" />
+
+    <Button
+        android:id="@+id/bt_F"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_F_onClick"
+        android:text="F"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_E"
+        app:layout_constraintStart_toEndOf="@+id/bt_E" />
+
+    <Button
+        android:id="@+id/bt_C"
+        android:layout_width="48dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:onClick="bt_C_onClick"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_B"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_B_onClick"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_A"
+        app:layout_constraintStart_toEndOf="@+id/bt_A" />
+
+    <Button
+        android:id="@+id/bt_Asharp"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_Bb_onClick"
+        android:text="A#"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_Gsharp"
+        app:layout_constraintStart_toEndOf="@+id/bt_Gsharp" />
+
+    <Button
+        android:id="@+id/bt_Gsharp"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_Ab_onClick"
+        android:text="G#"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_Fsharp"
+        app:layout_constraintStart_toEndOf="@+id/bt_Fsharp" />
+
+    <Button
+        android:id="@+id/bt_Csharp"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="bt_Db_onClick"
+        android:text="C#"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_C"
+        app:layout_constraintStart_toStartOf="@+id/bt_C" />
+
+    <Button
+        android:id="@+id/bt_E"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_E_onClick"
+        android:text="E"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_D"
+        app:layout_constraintStart_toEndOf="@+id/bt_D" />
+
+    <Button
+        android:id="@+id/bt_D"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_D_onClick"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_C"
+        app:layout_constraintStart_toEndOf="@+id/bt_C" />
+
+    <Button
+        android:id="@+id/bt_Dsharp"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_Eb_onClick"
+        android:text="D#"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_Csharp"
+        app:layout_constraintStart_toEndOf="@+id/bt_Csharp" />
+
+    <Button
+        android:id="@+id/bt_A"
+        android:layout_width="48dp"
+        android:layout_height="94dp"
+        android:onClick="bt_A_onClick"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_G"
+        app:layout_constraintStart_toEndOf="@+id/bt_G" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="bt_submit_onClick"
+        android:text="답 제출"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:onClick="bt_reset_onClick"
+        android:text="초기화"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_submit"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_show_chord"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="문제"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
